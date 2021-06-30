@@ -6,12 +6,15 @@ import { ImageCardComponent } from './image-card/image-card.component';
 
 
 @NgModule({
-  declarations: [
-    ImageGalleryComponent,
-    ImageCardComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+    declarations: [
+        ImageGalleryComponent,
+        ImageCardComponent
+    ],
+    exports: [
+        ImageGalleryComponent
+    ],
+    imports: [
+        CommonModule
+    ]
 })
 export class ImageGalleryModule { }
